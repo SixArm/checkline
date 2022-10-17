@@ -42,10 +42,25 @@ that work wells in on the command line such as within a pipe.
 The purpose isn't intended to handle very long lines, or very long inputs.
 
 
-## Comparisons
+## Projects with similarities
 
-See the command `vipe` that can pipe in and out of `$EDITOR`:
+`vipe` that can pipe in and out of `$EDITOR`:
 <https://github.com/juliangruber/vipe>
+
+`peco` simplistic interactive filtering tool:
+<https://github.com/peco/peco>
+
+`percol` adds interactive selection to the traditional pipe concept.
+<https://github.com/mooz/percol>
+
+`canything` interactive grep tools:
+<https://github.com/keiji0/canything>
+
+`zaw` zsh-friendly interactive grep tool:
+<https://github.com/zsh-users/zaw>
+
+`fzf` interactive grep tool written in Go language.
+<https://github.com/junegunn/fzf>
 
 
 ## Feedback
