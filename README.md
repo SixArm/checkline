@@ -23,6 +23,16 @@ Check each line that you want, then type ESC to escape.
 
 The command prints each line you want.
 
+## Install
+
+Install checkline as a typical Rust crate:
+
+```sh
+cargo install checkline
+```
+
+If people want other ways, such as with package managers, we welcome help to create these ways.
+
 
 ## Purpose
 
