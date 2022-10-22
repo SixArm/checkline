@@ -68,7 +68,11 @@
 //! * Website: https://github.com/sixarm/checkline
 //! * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 
+mod args;
+mod clap;
+
 use cursive::view::{Nameable, Resizable, Selector};
+use args::Args;
 
 fn main() {
     let mut c = cursive::default();
