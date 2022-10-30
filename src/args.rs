@@ -6,7 +6,7 @@
 
 use std::default::Default;
 
-#[derive(Default)]
+#[derive(Default, Debug)]
 pub struct Args {
     pub(crate) verbose: u8,
 }
