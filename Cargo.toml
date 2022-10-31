@@ -11,8 +11,7 @@ keywords = ["check", "checkbox", "stdin", "pick", "choose"]
 categories = ["command-line-utilities", "text-editors"]
 
 [dependencies]
-cursive = { version = "0.20.0", features = ["crossterm-backend"] }
-cursive_core = "*"
+cursive = { version = "0.20.0", features = ["termion-backend", "crossterm-backend"] }
 clap = { version = "4.0.18", features = ["deprecated", "derive", "cargo", "env", "unicode", "wrap_help", "string"] }
 env_logger = "*"
 log = "*"

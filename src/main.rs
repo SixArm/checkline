@@ -76,11 +76,12 @@ use args::Args;
 
 fn main() {
     env_logger::init();
-    log::debug!("hello world");
     let args = crate::clap::clap();
-    println!("{:?}", args);
-    println!("verbose: {}", args.verbose);
-    let mut c = cursive::default();
+    log::info!("checkline\nargs: {:?}", args);
+    if args.verbose > 0 {
+        println!("checkline\nargs: {:?}", args)
+    }
+    let mut c = cursive::termion();
     let row_count = ui::initialize(&mut c);
     c.run();
     ui::print_output(&mut c, row_count)

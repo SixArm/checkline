@@ -25,6 +25,6 @@ pub fn clap() -> crate::Args {
         .action(ArgAction::Count))
     .get_matches();
     Args {
-        verbose: std::cmp::max(3, matches.get_count("verbose") as u8),
+        verbose: matches.get_count("verbose"),
     }
 }
