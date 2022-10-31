@@ -17,11 +17,23 @@ You should see each line with a checkbox and text:
 
 Move up and down in the list by typing arrow keys.
 
-Check or uncheck any checkbox by typing space or return.
+Check or uncheck any checkbox by typing space or return, such as:
 
-Check each line that you want, then type ESC to escape.
+```txt
+[x] alpha
+[ ] bravo
+[x] charlie
+```
 
-The command prints each line you want.
+Check each line that you want, then type ESC to finish.
+
+The command outputs each line that you checked:
+
+```txt
+alpha
+charlie
+```
+
 
 ## Install
 
@@ -43,6 +55,9 @@ The purpose isn't intended to handle very long lines, or very long inputs.
 
 
 ## Projects with similarities
+
+`markline` that's the same kind of tool plus markers:
+<https://github.com/sixarm/markline>
 
 `vipe` that can pipe in and out of `$EDITOR`:
 <https://github.com/juliangruber/vipe>

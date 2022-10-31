@@ -19,11 +19,25 @@
 //! 
 //! Check or uncheck any checkbox by typing space or return.
 //! 
-//! Check each line that you want, then type ESC to escape.
 //! 
-//! The command prints each line you want.
-//! 
-//! 
+//! Check or uncheck any checkbox by typing space or return, such as:
+//!
+//! ```txt
+//! [x] alpha
+//! [ ] bravo
+//! [x] charlie
+//! ```
+//!
+//! Check each line that you want, then type ESC to finish.
+//!
+// The command outputs each line that you checked:
+//!
+//! ```txt
+//! alpha
+//! charlie
+//! ```
+//!
+//!  
 //! ## Purpose
 //! 
 //! The purpose of this command is a simple picker, that is easy to use, and
@@ -33,6 +47,9 @@
 //! 
 //! 
 //! ## Projects with similarities
+//! 
+//! `markline` that's the same kind of tool plus markers:
+//! <https://github.com/sixarm/markline>
 //! 
 //! `vipe` that can pipe in and out of `$EDITOR`:
 //! <https://github.com/juliangruber/vipe>
@@ -61,10 +78,10 @@
 //! ## Tracking
 //! 
 //! * Program: checkline
-//! * Version: 1.1.0
+//! * Version: 1.1.1
 //! * License: MIT OR BSD OR GPL-2.0 OR GPL-3.0
 //! * Created: 2022-10-15T12:24:50Z
-//! * Updated: 2022-10-17T21:13:13Z
+//! * Updated: 2022-10-31T23:20:25Z
 //! * Website: https://github.com/sixarm/checkline
 //! * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 
@@ -81,7 +98,7 @@ fn main() {
     if args.verbose > 0 {
         println!("checkline\nargs: {:?}", args)
     }
-    let mut c = cursive::termion();
+    let mut c = cursive::default();
     let row_count = ui::initialize(&mut c);
     c.run();
     ui::print_output(&mut c, row_count)

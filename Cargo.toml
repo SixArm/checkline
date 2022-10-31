@@ -1,7 +1,7 @@
 [package]
 name = "checkline"
 edition = "2021"
-version = "1.1.0"
+version = "1.1.1"
 authors = ["Joel Parker Henderson <joel@joelparkerhenderson.com>"]
 description = "checkline: checkbox line picker for stdin line input"
 readme = "README.md"
@@ -11,7 +11,7 @@ keywords = ["check", "checkbox", "stdin", "pick", "choose"]
 categories = ["command-line-utilities", "text-editors"]
 
 [dependencies]
-cursive = { version = "0.20.0", features = ["termion-backend", "crossterm-backend"] }
+cursive = { version = "0.20.0" } # features = ["termion-backend", "crossterm-backend"]
 clap = { version = "4.0.18", features = ["deprecated", "derive", "cargo", "env", "unicode", "wrap_help", "string"] }
 env_logger = "0.9.1"
 log = "0.4.17"
