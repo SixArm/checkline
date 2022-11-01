@@ -1,4 +1,4 @@
-//! Args for the application. 
+//! Args for the application.
 //!
 //! These args correspond to the matches in the file `clap.rs`.
 //! We have these args in their own file in order to be flexible,
