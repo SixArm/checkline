@@ -1,4 +1,4 @@
-# checkline: checkbox line picker for stdin line input
+# checkline: checkbox line picker from stdin to stdout
 
 Example:
 
