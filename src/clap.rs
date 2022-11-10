@@ -17,7 +17,7 @@ pub fn clap() -> crate::Args {
     .name("checkline")
     .version("1.1.0")
     .author("Joel Parker Henderson <joel@joelparkerhenderson.com>")
-    .about("Markbox line picker for stdin line input")
+    .about("Checkbox line picker for stdin line input")
     .arg(Arg::new("verbose")
         .help("Set the verbosity level")
         .short('v')
