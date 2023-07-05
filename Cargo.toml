@@ -5,13 +5,13 @@ version = "1.1.1"
 authors = ["Joel Parker Henderson <joel@joelparkerhenderson.com>"]
 description = "checkline: checkbox line picker for stdin line input"
 readme = "README.md"
-repository = "https://github.com/sixarm/checkline-rust-crate/"
+repository = "https://github.com/sixarm/checkline/"
 license = "MIT OR Apache-2.0 OR GPL-2.0 OR GPL-3.0"
 keywords = ["check", "checkbox", "stdin", "pick", "choose"]
 categories = ["command-line-utilities", "text-editors"]
 
 [dependencies]
 cursive = { version = "0.20.0" } # features = ["termion-backend", "crossterm-backend"]
-clap = { version = "4.0.18", features = ["deprecated", "derive", "cargo", "env", "unicode", "wrap_help", "string"] }
-env_logger = "0.9.1"
+clap = { version = "4.1.8", features = ["deprecated", "derive", "cargo", "env", "unicode", "wrap_help", "string"] }
+env_logger = "0.10.0"
 log = "0.4.17"

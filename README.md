@@ -80,7 +80,7 @@ The purpose isn't intended to handle very long lines, or very long inputs.
 
 ## Feedback
 
-We welcome consructive criticism and ideas for improvements.
+We welcome constructive criticism and ideas for improvements.
 
 
 ## Tracking

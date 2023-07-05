@@ -12,7 +12,7 @@
 use clap::{Arg, ArgAction};
 use crate::args::Args;
 
-pub fn clap() -> crate::Args {
+pub fn clap() -> crate::args::Args {
     let matches = clap::command!()
     .name("checkline")
     .version("1.1.0")
