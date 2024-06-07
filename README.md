@@ -78,6 +78,23 @@ The purpose isn't intended to handle very long lines, or very long inputs.
 <https://github.com/junegunn/fzf>
 
 
+## Settings
+
+On some systems, you may need to set your localization environment variables.
+
+Example:
+
+```sh
+export LC_COLLATE="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+```
+
+
 ## Feedback
 
 We welcome constructive criticism and ideas for improvements.
@@ -86,9 +103,9 @@ We welcome constructive criticism and ideas for improvements.
 ## Tracking
 
 * Program: checkline
-* Version: 1.1.0
+* Version: 1.1.2
 * License: MIT OR BSD OR GPL-2.0 OR GPL-3.0
 * Created: 2022-10-15T12:24:50Z
-* Updated: 2022-10-17T21:13:13Z
+* Updated: 2024-06-07T17:43:21Z
 * Website: https://github.com/sixarm/checkline
 * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)

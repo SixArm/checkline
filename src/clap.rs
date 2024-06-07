@@ -14,10 +14,10 @@ use crate::args::Args;
 
 pub fn clap() -> crate::args::Args {
     let matches = clap::command!()
-    .name("checkline")
-    .version("1.1.0")
-    .author("Joel Parker Henderson <joel@joelparkerhenderson.com>")
-    .about("Checkbox line picker for stdin line input")
+    .name(env!("CARGO_PKG_NAME"))
+    .version(env!("CARGO_PKG_VERSION"))
+    .author(env!("CARGO_PKG_AUTHORS"))
+    .about(env!("CARGO_PKG_DESCRIPTION"))
     .arg(Arg::new("verbose")
         .help("Set the verbosity level")
         .short('v')
