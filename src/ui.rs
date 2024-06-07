@@ -15,8 +15,8 @@ pub fn initialize_theme(c: &mut cursive::Cursive) {
     let mut theme = c.current_theme().clone();
     theme.shadow = false;
     theme.borders = cursive::theme::BorderStyle::None;
-    theme.palette[cursive::theme::PaletteColor::Background] = cursive::theme::Color::TerminalDefault;
-    theme.palette[cursive::theme::PaletteColor::View] = cursive::theme::Color::TerminalDefault;
+    theme.palette[cursive::theme::PaletteColor::Background] = cursive::theme::Color::Rgb(std::u8::MIN, std::u8::MIN, std::u8::MIN);
+    theme.palette[cursive::theme::PaletteColor::View] = cursive::theme::Color::Rgb(std::u8::MAX, std::u8::MAX, std::u8::MAX);
     c.set_theme(theme);
 }
 

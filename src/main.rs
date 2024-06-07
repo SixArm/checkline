@@ -106,7 +106,7 @@
 //! ## Tracking
 //!
 //! * Program: checkline
-//! * Version: 1.1.2
+//! * Version: 1.1.3
 //! * License: MIT OR BSD OR GPL-2.0 OR GPL-3.0
 //! * Created: 2022-10-15T12:24:50Z
 //! * Updated: 2024-06-07T17:43:21Z
